@@ -1,6 +1,6 @@
 .slideshow{
     display:grid;
-    grid-template-rows: 500px 35px;
+    grid-template-rows: 500px 50px;
     grid-template-columns: 5% 90% 5%;
 
 }
@@ -13,11 +13,18 @@
 .bottom_slideshow{
     background-color: $lightpurple;
     grid-column:1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .dots{
-        height:15px;
-        width:15px;
-        color:$lightyellow;
+        background-image: radial-gradient($lightyellow 20%, $lightpurple 20%);
+        height:20px;
+        width:20px;
+
+        &_current{
+            background-image: radial-gradient($lightyellow 40%, $lightpurple 20%);
+        }
     }
 }
 .image{
