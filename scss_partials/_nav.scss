@@ -45,7 +45,7 @@ background-color:$cyan;
 
 .drop-down{
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     list-style: none;

@@ -2,6 +2,7 @@ $cyan:#00c4f5;
 $darkpurple:#2b009c;
 $lightyellow:#f3fcc7;
 $lightpurple:#413c4f;;
+$lightblue:#a3e0e6;
 
 @import "scss_partials/nav";
 @import "scss_partials/footer";
@@ -9,4 +10,20 @@ $lightpurple:#413c4f;;
 *{
     padding:0;
     margin:0;
+}
+
+.bg-lightblue{
+    background-color: $lightblue;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-size:20px;
+    color:$darkpurple;
+    line-height: 35px;
+}
+
+.header{
+    font-size: 34px;
 }
