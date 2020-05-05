@@ -12,7 +12,6 @@ var time= 10000;
 
 
 function change_Image(){
-    //this works because I put name="img" on my html
     img.src =images[i];
 
     switch(i){
@@ -32,7 +31,6 @@ function change_Image(){
 
 
 function change_Image_Reverse(){
-    //this works because I put name="img" on my html
     img.src =images[i];
         switch(i){
             case 0:

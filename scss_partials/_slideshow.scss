@@ -1,0 +1,26 @@
+.slideshow{
+    display:grid;
+    grid-template-rows: 500px 35px;
+    grid-template-columns: 5% 90% 5%;
+
+}
+.arrow{
+    color:$lightyellow;
+    background-color: $lightpurple;
+    font-size: 30px;
+}
+
+.bottom_slideshow{
+    background-color: $lightpurple;
+    grid-column:1/4;
+
+    .dots{
+        height:15px;
+        width:15px;
+        color:$lightyellow;
+    }
+}
+.image{
+    height:500px;
+    width: 100%;
+}
