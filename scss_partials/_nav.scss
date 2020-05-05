@@ -35,38 +35,29 @@ background-color:$cyan;
         text-decoration: none;
         color: $lightyellow;
 
-        .drop-down{
-            display:none;
-            flex-direction: column;
-            justify-content: space-around;
-            list-style: none;
-            background-color: $darkpurple;
-            margin: 10px;
-            padding: 0px 10px 10px 10px;
-            color:$lightyellow;
-            border: solid 3px $lightpurple;
-            border-bottom-left-radius:15px;
-            border-bottom-right-radius:15px;
-            border-top-right-radius:15px;
-        }
-
-        #courses:hover{
-
-            &_drop-down{
-                display: flex;
-            }
-
-        }
-
         &:hover{
             background-color: $darkpurple; 
         }
         }
     }
     
-    
 }
 
+.drop-down{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: $darkpurple;
+    margin: 10px;
+    padding: 0px 10px 10px 10px;
+    color:$lightyellow;
+    border: solid 3px $lightpurple;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-top-right-radius:15px;
+}
 
 
 
