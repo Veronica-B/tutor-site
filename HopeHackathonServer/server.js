@@ -40,7 +40,8 @@ if (error){
     
 const newCustomer = {
     id: customers.length + 1,
-    firstName: req.body.firstName,
+    fullName: req.body.fullName,
+    email: req.body.email,
     password: req.body.password
 };
 customers.push(newCustomer);
@@ -64,7 +65,8 @@ if (error){
     return;
 }
 //update ID
-idData.firstName = req.body.firstName;
+idData.fullName = req.body.fullName;
+idData.email = req.body.email;
 idData.password = req.body.password;
 
 res.send(idData)
@@ -89,7 +91,8 @@ res.send(customers);
 
 function validateCustomer(customers){
     const schema = {
-        firstName: Joi.string().min(3).required(),
+        fullName: Joi.string().min(3).required(),
+        email: Joi.string().min(3).required(),
         password: Joi.number().min(3).required()
     };
     return  Joi.validate(customers, schema);
