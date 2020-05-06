@@ -1,0 +1,28 @@
+{"customers": [
+    {
+        "id": 1001,
+        "fullName": "Jake Ketchup",
+        "email": "jrod@gmail.com",
+        "password": 23409
+        
+    },
+    {
+        "id": 1002,
+        "fullName": "Brian Carols",
+        "email": "bcarols@gmail.com",
+        "password": 32304
+        
+    },
+    {   "id": 1003,
+        "fullName": "Drake Chance",
+        "emai": "drizzyc@msn.com",
+        "password": 34009
+    },
+    {
+        "id": 1004,
+        "fullName": "Darrel Star",
+        "email": "dstar28@outlook.com",
+        "password": 13405
+        }
+]
+}

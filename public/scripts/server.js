@@ -3,9 +3,9 @@ const express = require('express');
 const app = express();
 const Joi = require('joi');
 const PORT = process.env.PORT || 3000;
-const userdata = require("./public/customers.json");
+const userdata = require("./customers.json");
 const customers = userdata.customers;
-app.use(express.json());
+app.use(express.static('./signup.html'));
 
 
 app.get('/customers', (req, res) =>{
@@ -40,7 +40,8 @@ if (error){
     
 const newCustomer = {
     id: customers.length + 1,
-    firstName: req.body.firstName,
+    fullName: req.body.fullName,
+    email: req.body.email,
     password: req.body.password
 };
 customers.push(newCustomer);
@@ -64,7 +65,8 @@ if (error){
     return;
 }
 //update ID
-idData.firstName = req.body.firstName;
+idData.fullName = req.body.fullName;
+idData.email = req.body.email;
 idData.password = req.body.password;
 
 res.send(idData)
@@ -89,7 +91,8 @@ res.send(customers);
 
 function validateCustomer(customers){
     const schema = {
-        firstName: Joi.string().min(3).required(),
+        fullName: Joi.string().min(3).required(),
+        email: Joi.string().min(3).required(),
         password: Joi.number().min(3).required()
     };
     return  Joi.validate(customers, schema);
