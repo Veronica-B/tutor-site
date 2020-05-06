@@ -3,9 +3,9 @@ const express = require('express');
 const app = express();
 const Joi = require('joi');
 const PORT = process.env.PORT || 3000;
-const userdata = require("./public/customers.json");
+const userdata = require("./customers.json");
 const customers = userdata.customers;
-app.use(express.json());
+app.use(express.static('./signup.html'));
 
 
 app.get('/customers', (req, res) =>{
