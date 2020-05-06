@@ -1,0 +1,19 @@
+{
+  "name": "hardchallenge",
+  "version": "1.0.0",
+  "description": "HardChallenge Week 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jose Perez",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "node-static": "^0.7.11"
+  },
+  "devDependencies": {}
+}
