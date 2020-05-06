@@ -1,29 +1,30 @@
-{
-    "profiles" : [
+ [
         {
             "name" : "Veronica Barcia",
-            "profile-pic" : "/Users/quintonhbrown/Desktop/tutor-site/public/images/Veronica.png",
+            "pic" : "images/Veronica.png",
             "phone" : "8084206713",
             "email" : "VeronicaBarcia4@life101.org",
-            "className" : "node"
+            "subject" : "technology"
         },
         {
             "name" : "Jamika Palmer",
-            "profile-pic" : "/Users/quintonhbrown/Desktop/tutor-site/public/images/Jamika.png",
+            "pic" : "images/Jamika.png",
             "phone" : "8084209203",
-            "email" : ""
+            "email" : "",
+            "subject" : "financial-literacy"
         },
         {
             "name" : "Quinton Brown",
-            "profile-pic" : "/Users/quintonhbrown/Desktop/tutor-site/public/images/Quinton.png",
+            "pic" : "images/Quinton.png",
             "phone" : "8084207328",
-            "email" : "QuintonBrown@life101.org"
+            "email" : "QuintonBrown@life101.org",
+            "subject" : "human-anatomy"
         },
         {
             "name" : "Jose Perez",
-            "profile-pic" : "/Users/quintonhbrown/Desktop/tutor-site/public/images/Jose.png",
+            "pic" : "images/Jose.png",
             "phone" : "8084200394",
-            "email" : "JosePerez940@life101.org"
+            "email" : "JosePerez940@life101.org",
+            "subject" : "nutrition"
         }
     ]
-}

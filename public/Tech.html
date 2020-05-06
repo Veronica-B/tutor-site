@@ -35,27 +35,29 @@
         }
         
         window.onload = fetchAPI = () => {
-            fetch("/courses")
+            fetch("courses/technology")
             .then((response) => {
+                console.log(response)
                 return response.json()
             })
-            .then((data) => {
-                return data.map((item) => {
+            .then((course) => {
                     let tutorCard = createNode('div')
                     let name = createNode('h3')
                     let email = createNode('p')
                     let phone = createNode('p')
-        
-                    name.innerText = `${item.name}`
-                    email.innerText = `${item.email}`
-                    email.innerText = `${item.phone}`
+                    let img = new Image();   // Create new img element
+                        img.src = `./${course.pic}`
+                    name.innerText = `${course.name}`
+                    email.innerText = `${course.email}`
+                    phone.innerText = `${course.phone}`
         
                     append(tutorContainer, tutorCard)
                     append(tutorCard, name)
                     append(tutorCard, email)
                     append(tutorCard, phone)
+                    append(tutorCard, img)
                 })
-            })
+            
             .catch((error) => {
                 console.log(error)
             })
