@@ -1,10 +1,4 @@
 
-// Get Endpoints = localhost:3000/employees
-// Get ID Endpoint = localhost:3000/employees/:employeeID
-// Post Endpoint = localhost:3000/employees
-// Put Endpoint = localhost:3000/employees/:employeeID
-// Delete Endpoint = localhost:3000/employees/:employeeID
-
 const express = require('express');
 const app = express();
 const Joi = require('joi');
@@ -12,10 +6,7 @@ const PORT = process.env.PORT || 3000;
 const userdata = require("./public/customers.json");
 const customers = userdata.customers;
 app.use(express.json());
-// app.get('/', function (req, res){
-//     return res.sendFile(__dirname + '/public/hard.json');
-// });
-// app.use(express.static("public"));
+
 
 app.get('/customers', (req, res) =>{
     if (!customers){
