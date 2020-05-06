@@ -1,0 +1,28 @@
+{
+    "profiles" : [
+        {
+            "name" : "Veronica Barcia",
+            "profile-pic" : "/Users/quintonhbrown/Desktop/tutor-site/images/Veronica.png",
+            "phone" : "8084206713",
+            "email" : "VeronicaBarcia4@life101.com"
+        },
+        {
+            "name" : "Jamika Palmer",
+            "profile-pic" : "/Users/quintonhbrown/Desktop/tutor-site/images/Jamika.png",
+            "phone" : "8084209203",
+            "email" : ""
+        },
+        {
+            "name" : "Quinton Brown",
+            "profile-pic" : "/Users/quintonhbrown/Desktop/tutor-site/images/Quinton.png",
+            "phone" : "8084207328",
+            "email" : "QuintonBrown@life101.com"
+        },
+        {
+            "name" : "Jose Perez",
+            "profile-pic" : "/Users/quintonhbrown/Desktop/tutor-site/images/Jose.png",
+            "phone" : "8084200394",
+            "email" : "JosePerez940@life101.com"
+        }
+    ]
+}
