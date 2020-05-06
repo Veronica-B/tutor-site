@@ -4,7 +4,8 @@
             "name" : "Veronica Barcia",
             "profile-pic" : "/Users/quintonhbrown/Desktop/tutor-site/public/images/Veronica.png",
             "phone" : "8084206713",
-            "email" : "VeronicaBarcia4@life101.com"
+            "email" : "VeronicaBarcia4@life101.org",
+            "className" : "node"
         },
         {
             "name" : "Jamika Palmer",
@@ -16,13 +17,13 @@
             "name" : "Quinton Brown",
             "profile-pic" : "/Users/quintonhbrown/Desktop/tutor-site/public/images/Quinton.png",
             "phone" : "8084207328",
-            "email" : "QuintonBrown@life101.com"
+            "email" : "QuintonBrown@life101.org"
         },
         {
             "name" : "Jose Perez",
             "profile-pic" : "/Users/quintonhbrown/Desktop/tutor-site/public/images/Jose.png",
             "phone" : "8084200394",
-            "email" : "JosePerez940@life101.com"
+            "email" : "JosePerez940@life101.org"
         }
     ]
 }

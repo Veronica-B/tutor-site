@@ -17,9 +17,51 @@
             </ul>
         </nav>
     </header>
+    <div class="main--container">
+        <div id="tutor--container">
+    </div>
 
-
-
+    <script type="text/javascript">
+        //Selecting parent container for incoming data to render(show on page)
+        const tutorContainer = document.querySelector("#tutor--container")
+        
+        //CreateNode('div') => div will show on my website
+        const createNode = (element) => {
+            return document.createElement(element)
+        }
+        
+        const append = (parent, child) => {
+            return parent.appendChild(child)
+        }
+        
+        window.onload = fetchAPI = () => {
+            fetch("/courses")
+            .then((response) => {
+                return response.json()
+            })
+            .then((data) => {
+                return data.map((item) => {
+                    let tutorCard = createNode('div')
+                    let name = createNode('h3')
+                    let email = createNode('p')
+                    let phone = createNode('p')
+        
+                    name.innerText = `${item.name}`
+                    email.innerText = `${item.email}`
+                    email.innerText = `${item.phone}`
+        
+                    append(tutorContainer, tutorCard)
+                    append(tutorCard, name)
+                    append(tutorCard, email)
+                    append(tutorCard, phone)
+                })
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+        }
+        
+        </script>
     <footer class="footer">
 
         <a href="https://www.facebook.com/">
