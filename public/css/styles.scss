@@ -8,6 +8,7 @@ $dullblue:#edfbff;
 @import "scss_partials/nav";
 @import "scss_partials/footer";
 @import "scss_partials/slideshow";
+@import "scss_partials/signupform";
 
 *{
     padding:0;
@@ -68,3 +69,4 @@ $dullblue:#edfbff;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
+
