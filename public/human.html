@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Human Anatomy</title>
+    <title>Technical</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
@@ -17,8 +17,53 @@
             </ul>
         </nav>
     </header>
+    <div class="main--container">
+        <div id="tutor--container">
+    </div>
 
-
+    <script type="text/javascript">
+        //Selecting parent container for incoming data to render(show on page)
+        const tutorContainer = document.querySelector("#tutor--container")
+        
+        //CreateNode('div') => div will show on my website
+        const createNode = (element) => {
+            return document.createElement(element)
+        }
+        
+        const append = (parent, child) => {
+            return parent.appendChild(child)
+        }
+        
+        window.onload = fetchAPI = () => {
+            fetch("courses/human-anatomy")
+            .then((response) => {
+                console.log(response)
+                return response.json()
+            })
+            .then((course) => {
+                    let tutorCard = createNode('div')
+                    let name = createNode('h3')
+                    let email = createNode('p')
+                    let phone = createNode('p')
+                    let img = new Image();   // Create new img element
+                        img.src = `./${course.pic}`
+                    name.innerText = `${course.name}`
+                    email.innerText = `${course.email}`
+                    phone.innerText = `${course.phone}`
+        
+                    append(tutorContainer, tutorCard)
+                    append(tutorCard, name)
+                    append(tutorCard, email)
+                    append(tutorCard, phone)
+                    append(tutorCard, img)
+                })
+            
+            .catch((error) => {
+                console.log(error)
+            })
+        }
+        
+        </script>
     <footer class="footer">
 
         <a href="https://www.facebook.com/">
