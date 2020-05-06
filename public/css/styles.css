@@ -130,6 +130,12 @@
   width: 100%;
 }
 
+.body {
+  background-color: #c7fffc;
+  display: -ms-grid;
+  display: grid;
+}
+
 .container-sign-up {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,7 +171,7 @@
   -webkit-box-shadow: 2px 3px #2b009c;
           box-shadow: 2px 3px #2b009c;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .input-text {
@@ -195,6 +201,15 @@
   padding: 25px;
   -webkit-box-shadow: 2px 3px #2b009c;
           box-shadow: 2px 3px #2b009c;
+  border-radius: 10%;
+}
+
+.message {
+  resize: none;
+  margin: 25px;
+  color: #2b009c;
+  font-size: 25px;
+  height: 105px;
   border-radius: 10%;
 }
 
