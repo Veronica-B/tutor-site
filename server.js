@@ -5,7 +5,7 @@ const Joi = require('joi');
 const PORT = process.env.PORT || 3000;
 const userdata = require("./customers.json");
 const customers = userdata.customers;
-app.use(express.static('./signup.html'));
+app.use(express.static('public'));
 
 
 app.get('/customers', (req, res) =>{
