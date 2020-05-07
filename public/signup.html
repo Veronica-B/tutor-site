@@ -19,13 +19,13 @@
     </header>
 <div class="container-sign-up">
     <h1 class="head">Sign Up Here!</h1>
-<form class="form-sign-up">
-    <label class="label">Full Name</label>
-    <input class="input-text" type="text" id="name">
+<form class="form-sign-up" action="/customers" method="POST">
+    <label class="label" >Full Name</label>
+    <input class="input-text" type="text" id="name" name="create_full_name">
     <label class="label" >Email</label>
-    <input class="input-text" type="email" id="email">
+    <input class="input-text" type="email" id="email" name="create_email">
     <label class="label">Enter Password</label>
-    <input class="input-text" type="password" id="password1">
+    <input class="input-text" type="password" id="password1" name="create_password">
     <label class="label">Enter Password Again</label>
     <input class="input-text" type="password" id="password2">
 
