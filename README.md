@@ -30,10 +30,10 @@ In order to stop the app, hit "control" and "c" at the same time to close the se
 - node static
 - nodemon
 ---
-## Author H2
+## Author
 ---
 Quinton Brown, Veronica Barcia, Jose Perez, Jamika Palmer
 ---
-## License H2
+## License 
 ---
 This project is licensed under the MIT License - see License.md for details
