@@ -28,33 +28,7 @@ app.get('/courses/:subject', (req, res) => {
     const tutor = tutors.find(tutor => tutor.subject === req.params.subject)
     
     res.send(tutor)
-    
 })
-//API that will be getting financial-literacy tutor from my tutor-profiles.json
-app.get('/courses/financial-literacy', (req, res) => {
-    if (!X) {
-        return res.status(404).send("Resource is not found. Please try again")
-    }
-        
-    res.send(X)
-})
-//API that will be getting human-anatomy tutor from my tutor-profiles.json
-app.get('/courses/human-anatomy', (req, res) => {
-    if (!X) {
-        return res.status(404).send("Resource is not found. Please try again")
-    }
-        
-    res.send(X)
-})
-//API that will be getting nutrition tutor from my tutor-profiles.json
-app.get('/courses/nutrition', (req, res) => {
-    if (!X) {
-        return res.status(404).send("Resource is not found. Please try again")
-    }
-        
-    res.send(X)
-})
-
 
 // App is running on port 3000
 app.listen(PORT, () => {
