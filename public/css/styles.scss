@@ -9,6 +9,8 @@ $dullblue:#edfbff;
 @import "scss_partials/footer";
 @import "scss_partials/slideshow";
 @import "scss_partials/form";
+@import "scss_partials/testmonials";
+
 
 *{
     padding:0;
@@ -49,6 +51,7 @@ $dullblue:#edfbff;
 
 .header{
     font-size: 34px;
+    text-align: center;
 }
 
 .course_image{

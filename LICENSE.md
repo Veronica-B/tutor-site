@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2020 Life101 Dev Team
+Copyright (c) 2020 Real World Prep Dev Team
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
