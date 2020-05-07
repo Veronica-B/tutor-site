@@ -20,3 +20,20 @@ Stopping the App
 ---
 In order to stop the app, hit "control" and "c" at the same time to close the server.
 ---
+Built with
+---
+Nodejs
+Express
+bodyparser
+joi
+node
+node static
+nodemon
+---
+Author
+---
+Quinton Brown, Veronica Barcia, Jose Perez, Jamika Palmer
+---
+License
+---
+This project is licensed under the MIT License - see License.md for details
