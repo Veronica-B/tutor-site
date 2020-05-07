@@ -10,6 +10,7 @@ const userdata = require("./customers.json");
 const customers = userdata.customers;
 const bodyParser = require('body-parser')
 
+
 app.use(bodyParser.urlencoded({extended: false}))
 
 app.use(express.static("public"))

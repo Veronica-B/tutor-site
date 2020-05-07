@@ -1,7 +1,9 @@
 //PASTE THE STRING THAT GOES AFTER '=' SIGN IN YOUTUBE URL FOR CONST SEARCHLINK BELOW //
+
+
 const searchLink = ["A2S4fZM8RRw"];
 const getSearchTerm = () => searchLink[Math.floor(Math.random() * (searchLink.length-1))];
-const API = "AIzaSyDOCDFcZ-yRffL9Fgk0B0BcIfDLRI4Ayhk";
+const API = process.env.API_Key
 const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${getSearchTerm()}&key=${API}`;
 // console.log(url);
 fetch(url)
