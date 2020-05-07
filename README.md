@@ -22,13 +22,13 @@ In order to stop the app, hit "control" and "c" at the same time to close the se
 ---
 ## Built with 
 ---
-Nodejs
-Express
-bodyparser
-joi
-node
-node static
-nodemon
+- Nodejs
+- Express
+- bodyparser
+- joi
+- node
+- node static
+- nodemon
 ---
 ## Author H2
 ---
