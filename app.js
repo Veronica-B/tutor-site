@@ -124,7 +124,7 @@ function validateCustomer(customers){
     return  Joi.validate(customers, schema);
     
 }
-// App is running on port 3000
+// App is running on port 4000
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)
 })
