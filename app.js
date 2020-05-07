@@ -27,7 +27,7 @@ app.get("/courses", (req, res) => {
         
     res.send(tutors)
 })
-//API that will be getting technical tutor from my tutor-profiles.json
+//API that will be getting tutors from my tutor-profiles.json via there subject
 app.get('/courses/:subject', (req, res) => {
     if (!tutors) {
         return res.status(404).send("Resource is not found. Please try again")
