@@ -59,13 +59,13 @@ app.get('/customers/:id', (req, res) => {
 
 app.post('/customers', (req, res) => {
     //Validate
-const {error} = validateCustomer(req.body);
+// const {error} = validateCustomer(req.body);
 
 //return error if invalid
-if (error){
-    res.status(400).send(error.details[0].message);
-    return;
-}
+// if (error){
+//     res.status(400).send(error.details[0].message);
+//     return;
+// }
     
 const newCustomer = {
     id: customers.length + 1,
