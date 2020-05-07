@@ -11,13 +11,6 @@
   border-bottom-right-radius: 15px;
 }
 
-.nav_not_current {
-  border: solid 3px #413c4f;
-  padding: 10px;
-  border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
 .nav_ul {
   display: -webkit-box;
   display: -ms-flexbox;
