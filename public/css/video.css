@@ -32,4 +32,20 @@ div img {
   width: 150px;
   border-radius: 50%;
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  div h3 {
+    margin: 30px;
+    font-size: 25px;
+  }
+  div p {
+    margin: 20px;
+    font-size: 20px;
+  }
+  div img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+}
 /*# sourceMappingURL=video.css.map */

@@ -8,6 +8,9 @@ const PORT = process.env.PORT || 4000
 const Joi = require('joi');
 const userdata = require("./customers.json");
 const customers = userdata.customers;
+const bodyParser = require('body-parser')
+
+app.use(bodyParser.urlencoded({extended: false}))
 
 app.use(express.static("public"))
 
@@ -56,19 +59,19 @@ app.get('/customers/:id', (req, res) => {
 
 app.post('/customers', (req, res) => {
     //Validate
-const {error} = validateCustomer(req.body);
+// const {error} = validateCustomer(req.body);
 
 //return error if invalid
-if (error){
-    res.status(400).send(error.details[0].message);
-    return;
-}
+// if (error){
+//     res.status(400).send(error.details[0].message);
+//     return;
+// }
     
 const newCustomer = {
     id: customers.length + 1,
-    fullName: req.body.fullName,
-    email: req.body.email,
-    password: req.body.password
+    fullname: req.body.create_full_name,
+    email: req.body.create_email,
+    password:req.body.create_password
 };
 customers.push(newCustomer);
 res.send(customers);
@@ -124,7 +127,14 @@ function validateCustomer(customers){
     return  Joi.validate(customers, schema);
     
 }
+<<<<<<< HEAD
 // App is running on port 4000
+=======
+
+
+
+// App is running on port 3000
+>>>>>>> a53fee3639c10beb4571191d321621631fef3d60
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)
 })
