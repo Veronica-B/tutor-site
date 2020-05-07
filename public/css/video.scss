@@ -1,0 +1,28 @@
+$lightblue:#c7fffc;
+
+
+div{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    background-color: $lightblue;
+    border-radius:10%;
+
+    h3{
+     margin:50px;
+     font-size: 30px;
+    }
+    
+    p{
+    margin:30px;
+    font-size: 25px;
+    }
+    
+    img{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    }
+}
