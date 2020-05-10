@@ -1,0 +1,62 @@
+.body{
+    background-color: $lightblue;
+    display:grid;
+}
+
+.container-sign-up{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-sign-up{
+    background-color: $lightyellow;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 70px 50px 70px;
+    border:solid 2px $cyan;
+    margin-top:50px;
+    margin-bottom:80px;
+}
+
+.input-text{
+  margin: 15px;
+  color:$darkpurple;
+  font-size: 25px;
+  height:35px;
+  border-radius: 10%;
+}
+
+.head{
+    margin: 30px 0px 20px 0px;
+    color:$darkpurple;
+    font-size: 65px;
+}
+
+.label{
+    color:$darkpurple;
+    font-size: 25px;
+}
+
+.button{
+    margin: 10px;
+    color:$darkpurple;
+    font-size: 25px;
+    background-color: $lightblue;
+    padding: 25px;
+    box-shadow: 2px 3px $darkpurple;
+    border-radius: 10%;
+
+}
+
+.message{
+    resize:none;
+    margin: 25px;
+    color:$darkpurple;
+    font-size: 25px;
+    height:105px;
+    border-radius: 10%;
+}

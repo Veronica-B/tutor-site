@@ -1,0 +1,33 @@
+.slideshow{
+    display:grid;
+    grid-template-rows: 500px 50px;
+    grid-template-columns: 5% 90% 5%;
+
+}
+.arrow{
+    color:$lightyellow;
+    background-color: $lightpurple;
+    font-size: 30px;
+}
+
+.bottom_slideshow{
+    background-color: $lightpurple;
+    grid-column:1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .dots{
+        background-image: radial-gradient($lightyellow 20%, $lightpurple 20%);
+        height:20px;
+        width:20px;
+
+        &_current{
+            background-image: radial-gradient($lightyellow 40%, $lightpurple 20%);
+        }
+    }
+}
+.image{
+    height:500px;
+    width: 100%;
+}

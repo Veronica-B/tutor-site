@@ -1,0 +1,30 @@
+ [
+        {
+            "name" : "Veronica Barcia",
+            "pic" : "images/Veronica.png",
+            "phone" : "8084206713",
+            "email" : "VeronicaBarcia4@life101.org",
+            "subject" : "technology"
+        },
+        {
+            "name" : "Jamika Palmer",
+            "pic" : "images/Jamika.png",
+            "phone" : "8084209203",
+            "email" : "JamikaPalmer@life101.org",
+            "subject" : "financial-literacy"
+        },
+        {
+            "name" : "Quinton Brown",
+            "pic" : "images/Quinton.png",
+            "phone" : "8084207328",
+            "email" : "QuintonBrown@life101.org",
+            "subject" : "human-anatomy"
+        },
+        {
+            "name" : "Jose Perez",
+            "pic" : "images/Jose.png",
+            "phone" : "8084200394",
+            "email" : "JosePerez940@life101.org",
+            "subject" : "nutrition"
+        }
+    ]
