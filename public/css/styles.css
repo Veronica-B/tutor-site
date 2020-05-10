@@ -1,11 +1,7 @@
 .nav {
   width: 100%;
   height: 100px;
-<<<<<<< HEAD
   background-color: #7ae1f5;
-=======
-  background-color: #1446A0;
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
 }
 
 .nav_current {
@@ -15,7 +11,6 @@
   border-bottom-right-radius: 15px;
 }
 
-<<<<<<< HEAD
 .nav_current_dull {
   border: solid 3px #413c4f;
   padding: 10px;
@@ -23,8 +18,6 @@
   border-bottom-right-radius: 15px;
 }
 
-=======
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
 .nav_ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,19 +38,12 @@
 
 .nav_ul li .nav_link {
   text-decoration: none;
-<<<<<<< HEAD
   color: #413c4f;
-=======
-  color: #f3fcc7;
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
 }
 
 .nav_ul li .nav_link:hover {
   background-color: #2b009c;
-<<<<<<< HEAD
   color: #fffde6;
-=======
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
 }
 
 .drop-down {
@@ -73,11 +59,7 @@
   background-color: #2b009c;
   margin: 10px;
   padding: 0px 10px 10px 10px;
-<<<<<<< HEAD
   color: #fffde6;
-=======
-  color: #f3fcc7;
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
   border: solid 3px #413c4f;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -87,11 +69,7 @@
 .footer {
   width: 100%;
   height: 100px;
-<<<<<<< HEAD
   background-color: #7ae1f5;
-=======
-  background-color: #1446A0;
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,11 +95,7 @@
 }
 
 .arrow {
-<<<<<<< HEAD
   color: #fffde6;
-=======
-  color: #f3fcc7;
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
   background-color: #413c4f;
   font-size: 30px;
 }
@@ -143,21 +117,13 @@
 }
 
 .bottom_slideshow .dots {
-<<<<<<< HEAD
   background-image: radial-gradient(#fffde6 20%, #413c4f 20%);
-=======
-  background-image: radial-gradient(#f3fcc7 20%, #413c4f 20%);
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
   height: 20px;
   width: 20px;
 }
 
 .bottom_slideshow .dots_current {
-<<<<<<< HEAD
   background-image: radial-gradient(#fffde6 40%, #413c4f 20%);
-=======
-  background-image: radial-gradient(#f3fcc7 40%, #413c4f 20%);
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
 }
 
 .image {
@@ -166,11 +132,7 @@
 }
 
 .body {
-<<<<<<< HEAD
   background-color: #cff7ff;
-=======
-  background-color: #c7fffc;
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
   display: -ms-grid;
   display: grid;
 }
@@ -192,11 +154,7 @@
 }
 
 .form-sign-up {
-<<<<<<< HEAD
   background-color: #fffde6;
-=======
-  background-color: #f3fcc7;
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,12 +169,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 50px 70px 50px 70px;
-<<<<<<< HEAD
   border: solid 2px #7ae1f5;
-=======
-  -webkit-box-shadow: 2px 3px #2b009c;
-          box-shadow: 2px 3px #2b009c;
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
   margin-top: 50px;
   margin-bottom: 80px;
 }
@@ -244,11 +197,7 @@
   margin: 10px;
   color: #2b009c;
   font-size: 25px;
-<<<<<<< HEAD
   background-color: #cff7ff;
-=======
-  background-color: #c7fffc;
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
   padding: 25px;
   -webkit-box-shadow: 2px 3px #2b009c;
           box-shadow: 2px 3px #2b009c;
@@ -274,11 +223,7 @@
 }
 
 .flex-box-index {
-<<<<<<< HEAD
   margin: 75px;
-=======
-  margin: 25px;
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,7 +307,6 @@
           align-items: center;
   padding: 30px;
   font-size: 20px;
-<<<<<<< HEAD
   color: #413c4f;
   line-height: 35px;
   border: solid 2px #413c4f;
@@ -370,15 +314,6 @@
 
 .bg-lightblue {
   background-color: #cff7ff;
-=======
-  color: #2b009c;
-  line-height: 35px;
-  border: solid 2px #2b009c;
-}
-
-.bg-lightblue {
-  background-color: #c7fffc;
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,7 +329,6 @@
           align-items: center;
   padding: 30px;
   font-size: 20px;
-<<<<<<< HEAD
   color: #413c4f;
   line-height: 35px;
   border: solid 2px #413c4f;
@@ -405,16 +339,6 @@
   text-align: center;
   color: #2b009c;
   margin: 25px;
-=======
-  color: #2b009c;
-  line-height: 35px;
-  border: solid 2px #2b009c;
-}
-
-.header {
-  font-size: 34px;
-  text-align: center;
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
 }
 
 .course_image {
@@ -431,21 +355,13 @@
   color: #413c4f;
   border: solid 2px #2b009c;
   padding: 10px;
-<<<<<<< HEAD
   background-color: #fffde6;
-=======
-  background-color: #f3fcc7;
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
 
 .body {
-<<<<<<< HEAD
   background-color: #cff7ff;
-=======
-  background-color: #c7fffc;
->>>>>>> f64045f72c4f203f0fd6bb187c2fdabee1f2d569
   display: -ms-grid;
   display: grid;
 }
