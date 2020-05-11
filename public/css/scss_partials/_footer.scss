@@ -5,9 +5,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    &__icon {
+        height: 40px;
+        width: 40px;
+    }
 }
 
-.footer__icon {
-    height: 40px;
-    width: 40px;
-}
