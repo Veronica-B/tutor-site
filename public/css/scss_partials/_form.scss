@@ -60,3 +60,20 @@
     height:105px;
     border-radius: 10%;
 }
+
+@media only screen and (max-device-width: 568px){
+    .form-sign-up{
+        background-color: $lightblue;
+        padding:20px 0 20px 0;
+        border: dashed 5px $cyan;
+    }
+
+    .head{
+        font-size:45px;
+    }
+
+    .button{
+        background-color: $lightyellow;
+        padding: 15px;
+    }
+}

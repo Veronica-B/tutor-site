@@ -63,6 +63,10 @@ background-color:$cyan;
 }
 
 
-
+@media only screen and (max-device-width: 568px){
+  .nav_ul{
+      display: none;
+  }
+}
 
 
