@@ -67,6 +67,38 @@ background-color:$cyan;
   .nav_ul{
       display: none;
   }
+
+  .nav_current{
+    border: dashed 6px $cyan;
+  }
+
+  .nav_current_dull{
+    border: dashed 6px $lightblue;
+  }
+
+  .nav--mobile{
+      width: 100vw;
+      height: 85vh;
+      background-color: $lightyellow;
+  }
+
+  .nav_ul--mobile{
+   display: flex;
+   height: 90%;
+    flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+    list-style: none;
+
+    li{
+        font-size: 26px;
+
+        .nav_link{
+        text-decoration: none;
+        color: $lightpurple;
+
+        }
+    }
+    
 }
-
-
+}

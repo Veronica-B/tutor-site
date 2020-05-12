@@ -70,6 +70,40 @@
   .nav_ul {
     display: none;
   }
+  .nav_current {
+    border: dashed 6px #7ae1f5;
+  }
+  .nav_current_dull {
+    border: dashed 6px #cff7ff;
+  }
+  .nav--mobile {
+    width: 100vw;
+    height: 85vh;
+    background-color: #fffde6;
+  }
+  .nav_ul--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style: none;
+  }
+  .nav_ul--mobile li {
+    font-size: 26px;
+  }
+  .nav_ul--mobile li .nav_link {
+    text-decoration: none;
+    color: #413c4f;
+  }
 }
 
 .footer {
