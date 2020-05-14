@@ -400,11 +400,6 @@
   }
 }
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
 .container {
   display: -ms-grid;
   display: grid;
@@ -483,6 +478,18 @@
   background-color: #fffde6;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
+}
+
+@media only screen and (max-device-width: 568px) {
+  .container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
 .body {
