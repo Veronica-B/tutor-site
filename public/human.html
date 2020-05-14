@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technical</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/video.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -17,11 +17,11 @@
                 <li><a class=" nav_current_dull nav_link" href="signup.html">Sign Up</a></li>
             </ul>
 
-            <div class="hamburger--container">
-                <div class="hamburger--line line--one"></div>
-                <div class="hamburger--line line--two"></div>
-                <div class="hamburger--line line--three"></div>
-            </div>
+            <section class="hamburger--container">
+                <section class="hamburger--line line--one"></section>
+                <section class="hamburger--line line--two"></section>
+                <section class="hamburger--line line--three"></section>
+            </section>
         
         </nav>
 
@@ -74,6 +74,7 @@
                     append(tutorCard, phone)
                     append(tutorCard, name)
                     append(tutorCard, img)
+                    tutorCard.classList.add("showEmployee");
                 })
             
             .catch((error) => {

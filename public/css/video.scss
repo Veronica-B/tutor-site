@@ -1,14 +1,15 @@
 $lightblue:#c7fffc;
 
 
-div{
-    display:flex;
+.showEmployee{
+    display: flex;
     flex-direction: row-reverse;
-    align-items: center;
     justify-content: center;
     margin: 30px;
     background-color: $lightblue;
     border-radius:10%;
+    padding: 35px;
+
 
     h3{
      margin:50px;
@@ -16,8 +17,9 @@ div{
     }
     
     p{
-    margin:30px;
+    margin:50px;
     font-size: 25px;
+
     }
     
     img{
@@ -28,7 +30,7 @@ div{
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
-    div{
+    .showEmployee{
         margin: 15px;
         overflow: hidden;
         h3{

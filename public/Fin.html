@@ -16,28 +16,14 @@
                 <li><a class="nav_current_dull nav_link" href="contact.html">Contact Us</a></li>
                 <li><a class=" nav_current_dull nav_link" href="signup.html">Sign Up</a></li>
             </ul>
-
-            <div class="hamburger--container">
-                <div class="hamburger--line line--one"></div>
-                <div class="hamburger--line line--two"></div>
-                <div class="hamburger--line line--three"></div>
-            </div>
-        
-        </nav>
-
-        <nav class="nav--mobile">
-            </div>
-            <ul class="nav_ul--mobile">
-                <li><a class="nav_current_dull nav_link" href="index.html">Home</a></li>
-                <li><a class=" nav_current nav_link" href="courses.html">Courses</a></li>
-                <li><a class="nav_current_dull nav_link" href="contact.html">Contact Us</a></li>
-                <li><a class=" nav_current_dull nav_link" href="signup.html">Sign Up</a></li>
-            </ul>
         </nav>
     </header>
+    <div>
     <div class="main--container">
         <div id="tutor--container"></div>
     </div>
+</div>
+
 
     <script type="text/javascript">
         //Selecting parent container for incoming data to render(show on page)
@@ -68,17 +54,22 @@
                     name.innerText = `${course.name}`
                     email.innerText = `${course.email}`
                     phone.innerText = `${course.phone}`
-        
+
+                  
+
                     append(tutorContainer, tutorCard)
                     append(tutorCard, email)
                     append(tutorCard, phone)
                     append(tutorCard, name)
                     append(tutorCard, img)
+                    tutorCard.classList.add("showEmployee");
+
                 })
             
             .catch((error) => {
                 console.log(error)
             })
+            
         }
         
         </script>
@@ -111,5 +102,4 @@
     </footer>
     
 </body>
-<script src="sidenav.js"></script>
 </html>
