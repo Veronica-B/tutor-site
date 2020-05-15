@@ -1,14 +1,22 @@
 .footer{
+    display: grid;
+   align-items: center;
+   text-align: center;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 80px 20px;
     width:100%;
-    height:100px;
+    height:110px;
     background-color:$cyan;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 
     &__icon {
         height: 40px;
         width: 40px;
+    }
+
+    &__copyright{
+        color: $darkpurple;
+        font-size: 15px;
+        grid-column: 1/4;
     }
 }
 

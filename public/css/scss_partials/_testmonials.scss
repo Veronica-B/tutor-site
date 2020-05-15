@@ -1,3 +1,5 @@
+
+//This is for the container for the three pics 
 .container-three{
     display: grid;
     grid-template-rows: auto;
@@ -56,8 +58,7 @@
 
 @media only screen and (max-device-width: 568px){
     .container-three{
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: auto;
+       display: block;
     }
     .flex-box-index{
     margin: 5px;
