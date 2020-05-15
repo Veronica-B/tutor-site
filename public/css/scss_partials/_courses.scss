@@ -3,7 +3,6 @@
     display:grid;
     grid-template-columns: repeat(2,50%);
     grid-template-rows: repeat(2,auto);
-    overflow: hidden;
 }
 .bg-dullblue{
     background-color: $dullblue;
@@ -18,25 +17,7 @@
     border: solid 2px $lightpurple;
 }
 
-.bg-lightblue{
-    background-color: $lightblue;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    font-size:20px;
-    color:$lightpurple;
-    line-height: 35px;
-    border: solid 2px $lightpurple;
-}
 
-.header{
-    font-size: 40px;
-    text-align: center;
-    color: $darkpurple;
-    margin: 25px;
-}
 
 .course_image{
     height: 200px;

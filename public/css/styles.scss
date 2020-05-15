@@ -18,9 +18,33 @@ $dullblue:#edfbff;
     margin:0;
 }
 
-
 .body{
     background-color: $lightblue;
     display:grid;
 }
 
+.header{
+    font-size: 40px;
+    text-align: center;
+    color: $darkpurple;
+    margin: 25px;
+}
+
+.bg-lightblue{
+    background-color: $lightblue;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-size:20px;
+    color:$lightpurple;
+    line-height: 35px;
+    border: solid 2px $lightpurple;
+}
+
+@media only screen and (max-device-width: 568px){
+    .header{
+        font-size: 25px;
+    }
+}

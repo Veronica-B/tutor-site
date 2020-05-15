@@ -33,6 +33,30 @@ $lightblue:#c7fffc;
     .showEmployee{
         margin: 15px;
         overflow: hidden;
+        flex-direction: column;
+        h3{
+         margin:30px; 
+         font-size: 25px;
+        }
+        
+        p{
+        margin:20px;
+        font-size: 20px;
+        }
+        
+        img{
+        height:100px;
+        width:100px;
+        border-radius: 50%;
+        }
+    }
+} 
+
+@media only screen and (mqx-device-width: 568px){
+    .showEmployee{
+        margin: 10px;
+        overflow: hidden;
+
         h3{
          margin:30px;
          font-size: 25px;
