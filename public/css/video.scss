@@ -33,14 +33,13 @@ $lightblue:#c7fffc;
     .showEmployee{
         margin: 15px;
         overflow: hidden;
-        flex-direction: column;
         h3{
          margin:30px; 
          font-size: 25px;
         }
         
         p{
-        margin:20px;
+        margin:30px;
         font-size: 20px;
         }
         
@@ -52,10 +51,13 @@ $lightblue:#c7fffc;
     }
 } 
 
-@media only screen and (mqx-device-width: 568px){
+@media only screen and (max-device-width: 568px){
     .showEmployee{
         margin: 10px;
         overflow: hidden;
+        flex-direction: column-reverse;
+       align-items: center;
+       text-align: center;
 
         h3{
          margin:30px;
