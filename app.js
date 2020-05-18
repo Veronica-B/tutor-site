@@ -2,17 +2,19 @@
 const express = require('express')
 // Creating express app for server
 const app = express()
-// Creating a variable that will set the port of my server to 5000
+// Creating a variable that will set the port of my server to 4000
 const PORT = process.env.PORT || 4000
 //Telling express app to use express.static() method in order to stage my client folder
 const Joi = require('joi');
 const userdata = require("./customers.json");
 const customers = userdata.customers;
 const bodyParser = require('body-parser')
-
+const userContact= require("./user.json");
+const user=userContact.user;
 
 app.use(bodyParser.urlencoded({extended: false}))
-
+//This parses thru the json, uses the same code as bodyparser
+app.use(express.json());
 app.use(express.static("public"))
 
 app.get("/", (req, res) => {
@@ -45,6 +47,13 @@ app.get('/customers', (req, res) =>{
 
     res.send(customers)
 })
+app.get('/user', (req, res) =>{
+    if (!userContact){
+        return res.status(404).send("User comments were not found")
+   }
+
+   res.send(userContact)
+})
 
 app.get('/customers/:id', (req, res) => {
 
@@ -57,6 +66,17 @@ app.get('/customers/:id', (req, res) => {
 
     res.send(idData)
 });
+
+app.get('/user/:id', (req,res)=>{
+    const id = user.find(function(user){
+        return parseInt(req.params.id) === user.id
+    })
+    if (!id){
+        return res.status(404).send("User ID was not found");
+    }
+
+    res.send(id)
+})
 
 app.post('/customers', (req, res) => {
     //Validate
@@ -76,6 +96,18 @@ const newCustomer = {
 };
 customers.push(newCustomer);
 res.send(customers);
+});
+
+app.post('/user', (req, res) => {
+    
+const newUser = {
+    id: user.length + 1,
+    fullname: req.body.name,
+    email: req.body.email,
+    message:req.body.message
+};
+user.push(newUser);
+res.send(user);
 });
 
 app.put('/customers/:id', (req, res)=>{
@@ -129,12 +161,8 @@ function validateCustomer(customers){
     
 }
 
+
 // App is running on port 4000
-
-
-
-
-// App is running on port 3000
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)

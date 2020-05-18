@@ -36,13 +36,13 @@
     </header>
     <div class="container-sign-up">
         <h1 class="head">Contact Us!</h1>
-    <form class="form-sign-up">
+    <form class="form-sign-up" action="/user" method="POST">
         <label class="label" for="name">Full Name</label>
-        <input class="input-text" type="text" id="name">
+        <input class="input-text" type="text" id="name" name="name">
         <label class="label" for="email" >Email</label>
-        <input class="input-text" type="email" id="email">
+        <input class="input-text" type="email" id="email" name="email">
         <label class="label" for="message">Message</label>
-        <textarea class="message" id="message"></textarea>
+        <textarea class="message" id="message" name="message"></textarea>
     
         <button class="button">Submit</button>
     
