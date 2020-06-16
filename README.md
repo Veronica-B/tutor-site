@@ -23,11 +23,10 @@ You can do this by running **`npm i`** on your command line tool.
 In order to start the app, run **`node app.js`** through the command line tool, 
 make sure you are in the root of the directory.
 
----
+
 
 ## Stopping the App 
 
----
 
 In order to stop the app, hit "control" and "c" at the same time to close the server.
 
